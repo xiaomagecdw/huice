@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="ECSHOP-功能监控" parallel="tests"  thread-count="2">
+      <listeners>
+      	   <listener class-name="com.huice.listener.ExecutionListener" />
+           <listener class-name="com.huice.listener.Reporter" />
+      </listeners>
+      
+      <test name="chrome" preserve-order="true">
+           <parameter name="browserType" value="chrome"/>
+           
+           <classes>
+           <class name="com.huice.cases.Case01_firefox"/>
+           <class name="com.huice.cases.Case02_chrome"/>
+           <class name="com.huice.cases.Case03_Download"/>
+           <class name="com.huice.cases.Case04_checkOderID"/>
+           </classes>
+      
+      </test>
+</suite>

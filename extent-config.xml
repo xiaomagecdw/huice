@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ententreport>
+		<configuration>
+			<!-- report theme -->
+			<!-- standard,dark -->
+			<thmene>自动化测试报告</thmene>
+			<!-- document encoding -->
+			<!-- defualt to UTF-8 -->
+			<encoding>gb2312</encoding>
+			
+			<!-- protocol for script and stylesheets -->
+			<!-- default to https -->
+			<protocol>http</protocol>
+			
+			<!-- title of the document -->
+			<documentTitle></documentTitle>
+			
+			<!-- report name - displayed at top-nav -->
+			<reportName>自动化测试报告 - by selenium</reportName>
+			
+			<!-- report headline - displayed at top-nav, after reportHeadline -->
+			<reportHeadline></reportHeadline>
+			
+			<!-- global date format override -->
+			<!-- defaults to HH:mm:ss -->
+			<timeFormat>HH:mm:ss</timeFormat>
+			
+			<!-- custom javascript -->
+			<scripts>
+				<![CDATA[
+				$(document).ready(function() {
+				
+				})
+				]]>
+			</scripts>
+			
+			<!-- custom styles -->
+			<styles>
+				<![CDATA[
+				
+				]]>
+			</styles>
+		</configuration>
+	</ententreport>

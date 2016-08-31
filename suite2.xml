@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="huice" parallel="tests" thread-count="2">
+      <test name="火狐" preserve-order="true">
+            <parameter name="desc" value="火狐"/>
+            <classes>
+               <class name="com.huice.cases.Case01_firefox"/>
+            </classes>
+      
+      </test>
+      
+      
+      <test name="谷歌" preserve-order="true">
+         <parameter name="desc" value="谷歌"/>
+         <classes>
+             <class name="com.huice.cases.Case01_firefox"/>
+         </classes>
+      </test>
+      
+</suite>
